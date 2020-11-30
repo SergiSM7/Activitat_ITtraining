@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+  font-family: Arcade;
+  src: url(../fonts/Arcade.ttf);
+}
+
+@font-face {
+  font-family: OdinRounded;
+  src: url(../fonts/OdinRounded.otf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: #2d3436;
+  /*overflow: hidden;*/
+}
+
+header {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: Arcade;
+  font-size: 7em;
+  font-weight: 100;
+}
+
+span.vermell {
+  color: #d63031;
+}
+
+span.groc {
+  color: #fdcb6e;
+}
+
+span.verd {
+  color: #00b894;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+article {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  height: 90%;
+  padding: 30px;
+  background-color: #0984e3;
+  border: 10px solid #ffffff;
+  border-radius: 50px;
+  box-shadow: 0px 0px 30px #74b9ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section#pregunta-2, section#pregunta-3, section#pregunta-4 {
+  display: none;
+}
+
+section h2 {
+  align-self: flex-start;
+  font-family: Arcade;
+  font-size: 3em;
+  font-weight: 100;
+  color: #74b9ff;
+}
+
+div.enunciat p {
+  font-family: OdinRounded;
+  font-size: 1.5em;
+  color: #ffffff;
+  text-align: justify;
+  padding: 0px 40px;
+}
+
+div.respostes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div.respostes div {
+  width: 40%;
+  height: 60px;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid #74b9ff;
+  background-color: #ffffff;
+  border-radius: 10px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+div.respostes div:hover {
+  border: 3px solid #fdcb6e;
+}
+
+label {
+  width: 50%;
+  font-family: OdinRounded;
+  font-size: 1.5em;
+  color: #0984e3;
+}
+
+input, select {
+  font-family: OdinRounded;
+  font-size: 1.5em;
+  color: #0984e3;
+  border: 0px;
+  outline: none;
+}
+
+input[type=text], select {
+  width: 100%;
+  margin-top: 5px;
+}
+
+button {
+  width: 20%;  
+  font-family: OdinRounded;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #00b894;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  outline: none;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #00cec9;
+  box-shadow: 0px 0px 15px #74b9ff;
+  cursor: pointer;
+}
+
+footer {
+  height: 5%;
+  background-color: #ff7675;
+  padding-top: 10px;
+  padding-right: 10px;
+  opacity: 0.6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer span {
+  font-family: Arcade;
+  font-size: 1.2em;
+  font-weight: 100;
+}

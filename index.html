@@ -11,14 +11,13 @@
     <header>
       <span class="vermell">IT</span>
       <span class="groc">training</span>&nbsp;
-      <span class="verd">Lorem</span>
+      <span class="verd">SQL</span>
     </header>
 
     <main>
       <article>
         <form>
-
-          <section id="pregunta-1">
+          <section class="elementVisible" id="pregunta-1">
             <h2>Pregunta #1</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -27,60 +26,59 @@
               <div>
                 <input type="radio" id="exemple-1-1" />
                 &nbsp;&nbsp;
-                <label for="exemple-1">Hola</label>
+                <label for="exemple-1">Lorem ipsum dolor sit amet</label>
               </div>
               <div>
                 <input type="checkbox" id="exemple-1-2" />
                 &nbsp;&nbsp;
-                <label for="exemple-2">Que tal?</label>
-              </div>
-              <div>
-                <input type="text" id="exemple-1-3" name="resposta-1" placeholder="jajajajajaja" />
-              </div>
-              <div>
-                <select id="exemple-1-4">
-                  <option>hola</option>
-                  <option>hola2</option>
-                  <option>hola3</option>
-                  <option>hola4</option>
-                </select>
-              </div>
-            </div> <!-- FINAL <div class="respostes">-->
-            <button>Següent >></button>
-          </section> <!-- FINAL <section id="pregunta-#"> -->
-
-          <section id="pregunta-2">
-            <h2>Pregunta #2</h2>
-            <div class="enunciat">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
-            </div>
-            <div class="respostes">
-              <div>
-                <input type="radio" id="exemple-2-1" />
-                &nbsp;&nbsp;
-                <label for="exemple-1">Lorem ipsum dolor sit amet</label>
-              </div>
-              <div>
-                <input type="checkbox" id="exemple-2-2" />
-                &nbsp;&nbsp;
                 <label for="exemple-2">Lorem ipsum dolor sit amet</label>
               </div>
               <div>
-                <input type="text" id="exemple-2-3" name="resposta-1" placeholder="Lorem ipsum dolor sit amet" />
+                <input type="text" id="exemple-1-3" name="resposta-1" placeholder="Lorem ipsum dolor sit amet" />
               </div>
               <div>
-                <select id="exemple-2-4">
+                <select id="exemple-1-4">
                   <option>Lorem ipsum dolor sit amet</option>
                   <option>Lorem ipsum dolor sit amet</option>
                   <option>Lorem ipsum dolor sit amet</option>
                   <option>Lorem ipsum dolor sit amet</option>
                 </select>
               </div>
-            </div> <!-- FINAL <div class="respostes"> -->
-            <button>Següent >></button>
-          </section>  <!-- FINAL <section id="pregunta-#"> -->
+            </div>
+              <button type="button" id="boto-1" value="boto-1" onclick="passaSeguent(this)">Següent >></button>
+          </section>
 
-          <section id="pregunta-3">
+          <section class="elementOcult" id="pregunta-2">
+            <h2>Pregunta #2</h2>
+            <div class="enunciat">
+              <p>Que es un gos?</p>
+            </div>
+            <div class="respostes">
+              <div>
+                <input type="radio" id="resp_2_1" value="Una planta" name="resposta1" onclick="pregunta2(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta2(this)">Una planta</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_2_2" value="Un animal"  name="resposta1" onclick="pregunta2(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta2(this)">Un animal</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_2_3" value="Un gos" name="resposta1" onclick="pregunta2(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta2(this)">Un gos</label>
+              </div>
+              <div>
+                <input type="radio" id="resp_2_4" value="Un extaterrestre" name="resposta1" onclick="pregunta2(this)"/>
+                &nbsp;&nbsp;
+                <label onclick="pregunta2(this)">Un extaterrestre</label>
+              </div>
+            </div>
+            <button type="button" id="boto-2" value="boto-2" onclick="passaSeguent(this)">Següent >></button>
+          </section>
+          
+          <section class="elementOcult" id="pregunta-3">
             <h2>Pregunta #3</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -107,11 +105,11 @@
                   <option>Lorem ipsum dolor sit amet</option>
                 </select>
               </div>
-            </div> <!-- FINAL <div class="respostes"> -->
+            </div>
             <button>Següent >></button>
-          </section>  <!-- FINAL <section id="pregunta-#"> -->
+          </section>
 
-          <section id="pregunta-4">
+            <section class="elementOcult" id="pregunta-4">
             <h2>Pregunta #4</h2>
             <div class="enunciat">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit diam vitae urna pulvinar commodo. Suspendisse tristique eu justo in dignissim. Phasellus ut nibh ornare, porttitor sapien a, eleifend massa?</p>
@@ -138,16 +136,17 @@
                   <option>Lorem ipsum dolor sit amet</option>
                   <option>Lorem ipsum dolor sit amet</option>
                 </select>
-              </div> <!-- FINAL <div class="respostes"> -->
+              </div>
             <button>Següent >></button>
-          </section>  <!-- FINAL <section id="pregunta-#"> -->
+          </section>
 
-          </form>  <!-- FINAL <form> -->
-      </article>  <!-- FINAL <article> -->
-    </main>  <!-- FINAL <main> -->
+          </form>
+      </article>
+    </main>
 
     <footer>
       <span class="vermell">Designed and developed by DAW2© 2020-2021 All rights reserved</span>
     </footer>
+    <script src="./js/preguntes.js"></script>
   </body>
 </html>
